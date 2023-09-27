@@ -1,7 +1,7 @@
 
 <html>
 <head>
-<title>setTimeoutªº½m²ß1</title>
+<title>setTimeoutçš„ç·´ç¿’1</title>
 </head>
  
 <body>
@@ -65,7 +65,7 @@ document.getElementById('t').innerHTML=(hrs+":"+mins+" AM");
 }
 var sec=6*secs;
 var rs=395;
-for(i=sec;i<360+sec;i+=30){//¬í
+for(i=sec;i<360+sec;i+=30){//ç§’
     x1=x+rs*Math.cos(i*(Math.PI/180));
 	y1=y+rs*Math.sin(i*(Math.PI/180));
     var g=i-sec;
@@ -73,7 +73,7 @@ for(i=sec;i<360+sec;i+=30){//¬í
 	document.getElementById('a'+g).style.left=x1;
 }
 rs-=10;
-for(i=sec;i<360+sec;i+=6){//¬í
+for(i=sec;i<360+sec;i+=6){//ç§’
     x1=x+rs*Math.cos(i*(Math.PI/180));
 	y1=y+rs*Math.sin(i*(Math.PI/180));
     var g=i-sec;
@@ -82,7 +82,7 @@ for(i=sec;i<360+sec;i+=6){//¬í
 }
 var min=6*mins;
 rs=355;
-for(i=min;i<360+min;i+=30){//¤À
+for(i=min;i<360+min;i+=30){//åˆ†
     x1=x+rs*Math.cos(i*(Math.PI/180));
 	y1=y+rs*Math.sin(i*(Math.PI/180));
     var g=i-min;
@@ -90,7 +90,7 @@ for(i=min;i<360+min;i+=30){//¤À
 	document.getElementById('b'+g).style.left=x1;
 }
 rs-=10;
-for(i=min;i<360+min;i+=6){//¤À
+for(i=min;i<360+min;i+=6){//åˆ†
     x1=x+rs*Math.cos(i*(Math.PI/180));
 	y1=y+rs*Math.sin(i*(Math.PI/180));
     var g=i-min;
@@ -99,7 +99,7 @@ for(i=min;i<360+min;i+=6){//¤À
 }
 var hr=30*hrs;
 rs=315;
-for(i=hr;i<360+hr;i+=30){//¤À
+for(i=hr;i<360+hr;i+=30){//åˆ†
     x1=x+rs*Math.cos(i*(Math.PI/180));
 	y1=y+rs*Math.sin(i*(Math.PI/180));
     var g=i-hr;
@@ -107,7 +107,7 @@ for(i=hr;i<360+hr;i+=30){//¤À
 	document.getElementById('c'+g).style.left=x1;
 }
 rs-=10;
-for(i=hr;i<360+hr;i+=30){//¤À
+for(i=hr;i<360+hr;i+=30){//åˆ†
     x1=x+rs*Math.cos(i*(Math.PI/180));
 	y1=y+rs*Math.sin(i*(Math.PI/180));
     var g=i-hr;
@@ -120,9 +120,9 @@ for(i=hr;i<360+hr;i+=30){//¤À
  
  
 /*
-¶ê§Î
-r¡G¥b®|
-radian = ¨¤«×*(Math.PI/180);
+åœ“å½¢
+rï¼šåŠå¾‘
+radian = è§’åº¦*(Math.PI/180);
 x = r*Math.cos(radian);
 y = r*Math.sin(radian);
 */
@@ -135,20 +135,20 @@ for(i=0;i<r;i+=5){
 	y1=y+i*Math.sin(90*(Math.PI/180));
 	document.writeln("<div style='position:absolute;top:"+x1+";left:"+y1+";width:3;height:3;background:red;font-size:1px'></div>");
 }
-for(i=0;i<360;i+=6){//¥~³ò
+for(i=0;i<360;i+=6){//å¤–åœ
     x1=x+r*Math.cos(i*(Math.PI/180));
 	y1=y+r*Math.sin(i*(Math.PI/180));
 	document.writeln("<div style='position:absolute;top:"+x1+";left:"+y1+";width:3;height:3;background:red;font-size:1px'></div>");
 }
 
 var rs=395;
-for(i=0;i<360;i+=30){//¬í
+for(i=0;i<360;i+=30){//ç§’
     x1=x+rs*Math.cos(i*(Math.PI/180));
 	y1=y+rs*Math.sin(i*(Math.PI/180));
 	document.writeln("<div id='a"+i+"' style='position:absolute;top:"+x1+";left:"+y1+";width:3;height:3;background:black;font-size:1px'></div>");
 }
 rs-=10;j=360;
-for(i=0;i<360;i+=6){//¬í
+for(i=0;i<360;i+=6){//ç§’
     x1=x+rs*Math.cos(i*(Math.PI/180));
 	y1=y+rs*Math.sin(i*(Math.PI/180));
 	document.writeln("<div id='an"+i+"' style='position:absolute;top:"+x1+";left:"+y1+";font-size:1px'>");
@@ -158,13 +158,13 @@ for(i=0;i<360;i+=6){//¬í
 }
 
 rs=355;
-for(i=0;i<360;i+=30){//¤À
+for(i=0;i<360;i+=30){//åˆ†
     x1=x+rs*Math.cos(i*(Math.PI/180));
 	y1=y+rs*Math.sin(i*(Math.PI/180));
 	document.writeln("<div id='b"+i+"' style='position:absolute;top:"+x1+";left:"+y1+";width:3;height:3;background:black;font-size:1px'></div>");
 }
 rs-=10;j=360;
-for(i=0;i<360;i+=6){//¤À
+for(i=0;i<360;i+=6){//åˆ†
     x1=x+rs*Math.cos(i*(Math.PI/180));
 	y1=y+rs*Math.sin(i*(Math.PI/180));
 	document.writeln("<div id='bn"+i+"' style='position:absolute;top:"+x1+";left:"+y1+";font-size:1px'>");
@@ -174,13 +174,13 @@ for(i=0;i<360;i+=6){//¤À
 }
 
 rs=315;
-for(i=0;i<360;i+=30){//®É
+for(i=0;i<360;i+=30){//æ™‚
     x1=x+rs*Math.cos(i*(Math.PI/180));
 	y1=y+rs*Math.sin(i*(Math.PI/180));
 	document.writeln("<div id='c"+i+"' style='position:absolute;top:"+x1+";left:"+y1+";width:3;height:3;background:black;font-size:1px'></div>");
 }
 rs-=10;j=360;
-for(i=0;i<360;i+=30){//®É
+for(i=0;i<360;i+=30){//æ™‚
     x1=x+rs*Math.cos(i*(Math.PI/180));
 	y1=y+rs*Math.sin(i*(Math.PI/180));
 	document.writeln("<div id='cn"+i+"' style='position:absolute;top:"+x1+";left:"+y1+";font-size:1px'>");
